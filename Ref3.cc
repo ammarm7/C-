@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std; 
 
+bool doublePerc(int); 	// Pass by value 
+bool doublePerc(int*); 	// Pass by reference by pointer 
+bool doublePerc(int&); 	// Pass by reference by reference
+
+
 int main()
 { 
 	int n1, n2;	
@@ -30,6 +35,33 @@ int main()
 
 	return 0;
 
+}
+
+bool doublePerc(int n)
+{ 
+	if (n < 0 || n > 100) 
+		return false; 
+
+	n *= 2;
+	return true; 
+} 
+
+bool doublePerc(int* n) 
+{ 
+	if (*n < 0 || *n > 100)
+		return false; 
+
+	*n *= 2; 
+	return true; 
+}
+
+bool doublePerc(int& n) 
+{
+	if (n < 0 || n > 100) 
+		return false; 
+
+	n *= 2; 
+	return true; 	
 }
 
 
