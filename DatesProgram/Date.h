@@ -1,3 +1,5 @@
+//Date.h
+
 class Date
 {
 	public:
@@ -14,4 +16,5 @@ class Date
 		int lastDayInMonth();
 		bool leapYear();
 		string getMonthStr();
+		
 };
