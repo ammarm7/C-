@@ -15,10 +15,13 @@ int main()
 	Date d2;
 	d2.printLong();
 	cout << endl;
-	
+
+
 	Date dArray[3];
-	dArray[0].setDate(5,5,1955);
+	dArray[0].setDate(5,5,1995);
 	dArray[0].printLong();
+
+	
 
 
 
