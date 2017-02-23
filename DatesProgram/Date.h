@@ -4,7 +4,7 @@ class Date
 {
 	public:
 		Date();
-		Date(int, int, int);
+		Date(int=0, int=0, int=0);
 		void setDate(int, int, int);
 		void printShort();
 		void printLong();

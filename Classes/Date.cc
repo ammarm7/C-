@@ -5,13 +5,6 @@ using namespace std;
 #include "Date.h"
 
 
-
-Date::Date()
-{
-	cout << "-- default ctor" << endl;
-	setDate(0,0,0);
-}
-
 Date::Date(int d, int m, int y)
 {
 	setDate(d, m, y);
@@ -19,6 +12,7 @@ Date::Date(int d, int m, int y)
 
 void Date::setDate(int d, int m, int y)
 { 
+	cout << "-- default ctor" << endl;
 	year = ( ( y > 0) ? y : 0 );	//Error checking
 	month = ( ( m > 0 && m <= 12 ) ? m : 0 ) ;
 	day = ( ( d > 0 && d <= lastDayInMonth() ) ? d : 0);

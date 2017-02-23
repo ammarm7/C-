@@ -6,26 +6,24 @@ using namespace std;
 
 int main()
 {
-	Date d1(18,1,2017);
 
-	d1.printShort();
+	Date d1;
 	d1.printLong();
 
-	cout << endl;
-	Date d2;
+	Date d2(20,1,2017);
 	d2.printLong();
-	cout << endl;
-
-
-	Date dArray[3];
-	dArray[0].setDate(5,5,1995);
-	dArray[0].printLong();
-
 	
+	//This is demonstrating the example of a default year. 
+	Date d3(20, 1);	
+	d3.printLong();
+
+	Date d4(20);
+	d4.printLong();
+
+	Date dArray[3];		//Note how this is implicitly calling the default constructor.
 
 
-
-
+       
 
 	return 0;
 }
