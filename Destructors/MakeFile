@@ -1,0 +1,2 @@
+Thing.o:	Thing.cc Thing.h
+	g++ -c Thing.cc
