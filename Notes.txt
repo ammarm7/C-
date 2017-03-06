@@ -1,0 +1,2 @@
+Compile from command line:
+	g++ -o a ex.h ex.cc main.cc

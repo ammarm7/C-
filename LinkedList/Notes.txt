@@ -1,0 +1,6 @@
+Conditions for adding to a LinkedList are:
+
+1. The list is empty 
+2. Adding to the front of the list
+3. Adding in the middle 
+4. Adding at the end
